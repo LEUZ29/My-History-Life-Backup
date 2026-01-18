@@ -247,7 +247,7 @@ footer span a:hover {
 /* Para Celulares (Telas de até 720px) */
 @media (max-width: 720px) {
   .testimonials-grid {
-    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    grid-template-columns: 2fr; /* 1 depoimento por linha para facilitar a leitura */
     gap: 15px;
   }
 
