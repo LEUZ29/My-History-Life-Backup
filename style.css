@@ -231,6 +231,58 @@ footer span a:hover {
   }
 }
 
+/* Para Celulares (Telas de até 600px) */
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: auto; /* No celular, o card cresce conforme o texto */
+  }
+}
+
+/* Para Celulares (Telas de até 720px) */
+@media (max-width: 720px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: auto; /* No celular, o card cresce conforme o texto */
+  }
+}
+
+/* Para Celulares (Telas de até 1080px) */
+@media (max-width: 1080px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: auto; /* No celular, o card cresce conforme o texto */
+  }
+}
+
+/* Para Celulares (Telas de até 1920px) */
+@media (max-width: 1920px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: auto; /* No celular, o card cresce conforme o texto */
+  }
+}
+
 /* Estilo do Card Individual */
 .testimonial-card {
   background: #fdfdfd;
