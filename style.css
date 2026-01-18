@@ -185,6 +185,135 @@ footer span a:hover {
   padding: 10px;
 }
 
+/* Grade de Depoimentos */
+.testimonials-grid {
+  display: grid;
+  /* O segredo: 'repeat(3, 1fr)' cria 3 colunas iguais. 
+       O 'auto-fit' ajusta se houver menos depoimentos */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Espaço entre os cards */
+  margin-top: 30px;
+  align-items: stretch; /* Garante que todos os cards tenham a mesma altura */
+}
+
+/* Ajuste do Card para o conteúdo caber bem */
+.testimonial-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empurra o autor para o rodapé do card */
+  min-height: 250px; /* Mantém um padrão visual */
+  border: 1px solid #f0f0f0;
+}
+
+/* --- RESPONSIVIDADE (O toque de mestre para 2026) --- */
+
+/* Para Tablets (Telas de até 992px) */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 depoimentos lado a lado */
+  }
+}
+
+/* Para Celulares (Telas de até 600px) */
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 depoimento por linha para facilitar a leitura */
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    min-height: auto; /* No celular, o card cresce conforme o texto */
+  }
+}
+
+/* Estilo do Card Individual */
+.testimonial-card {
+  background: #fdfdfd;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  border-color: #6c5ce7;
+}
+
+.quote-icon {
+  color: #6c5ce7;
+  font-size: 24px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Autor do Depoimento */
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+}
+
+.testi-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6c5ce7;
+}
+
+.author-info strong {
+  display: block;
+  font-size: 1rem;
+  color: #2d3436;
+}
+
+.author-info span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Botão Enviar Relato */
+.add-testi {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #6c5ce7;
+  color: #6c5ce7;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #6c5ce7;
+  color: white;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
